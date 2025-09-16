@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عالم الأنمي - إنشاء حساب</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>عالم الأنمي</h1>
+            <p>اكتشف أفضل الأنمي والمانجا</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="../index.html">الرئيسية</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="services.html">خدماتنا</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+                <li><a href="login.html">تسجيل الدخول</a></li>
+                <li><a href="register.html" class="active">إنشاء حساب</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="register-content">
+            <div class="container">
+                <div class="register-form-container">
+                    <h2>إنشاء حساب جديد</h2>
+                    <p>انضم إلى مجتمع محبي الأنمي</p>
+                    
+                    <form id="registerForm" class="auth-form">
+                        <div class="form-group">
+                            <label for="registerName">الاسم الكامل:</label>
+                            <input type="text" id="registerName" name="name" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="registerEmail">البريد الإلكتروني:</label>
+                            <input type="email" id="registerEmail" name="email" required>
+                            <span class="error-message" id="regEmailError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="registerPassword">كلمة المرور:</label>
+                            <input type="password" id="registerPassword" name="password" required>
+                            <span class="error-message" id="regPasswordError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="confirmPassword">تأكيد كلمة المرور:</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" required>
+                            <span class="error-message" id="confirmPasswordError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="favoriteAnime">الأنمي المفضل:</label>
+                            <select id="favoriteAnime" name="favoriteAnime" required>
+                                <option value="">اختر الأنمي المفضل</option>
+                                <option value="naruto">ناروتو</option>
+                                <option value="onepiece">ون بيس</option>
+                                <option value="attackontitan">أتاك أون تايتان</option>
+                                <option value="demonslayer">قاتل الشياطين</option>
+                                <option value="myheroacademia">أكاديمية البطل</option>
+                                <option value="other">أخرى</option>
+                            </select>
+                            <span class="error-message" id="animeError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="agreeTerms" name="terms" required>
+                                أوافق على <a href="#">الشروط والأحكام</a>
+                            </label>
+                            <span class="error-message" id="termsError"></span>
+                        </div>
+                        
+                        <button type="submit" class="auth-btn">إنشاء الحساب</button>
+                        
+                        <div class="form-links">
+                            <a href="login.html">لديك حساب بالفعل؟ سجل الدخول</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <aside class="sidebar">
+            <div class="container">
+                <h3>لماذا تنضم إلينا؟</h3>
+                <ul>
+                    <li>مجتمع نشط من محبي الأنمي</li>
+                    <li>مراجعات حصرية وتوصيات</li>
+                    <li>مسابقات وجوائز شهرية</li>
+                    <li>أحدث الأخبار والإعلانات</li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 عالم الأنمي. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <span id="toastMessage"></span>
+        <button id="toastClose">&times;</button>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
+

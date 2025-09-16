@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عالم الأنمي - تسجيل الدخول</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>عالم الأنمي</h1>
+            <p>اكتشف أفضل الأنمي والمانجا</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="../index.html">الرئيسية</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="services.html">خدماتنا</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+                <li><a href="login.html" class="active">تسجيل الدخول</a></li>
+                <li><a href="register.html">إنشاء حساب</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="login-content">
+            <div class="container">
+                <div class="login-form-container">
+                    <h2>تسجيل الدخول</h2>
+                    <p>أدخل بياناتك للوصول إلى حسابك</p>
+                    
+                    <form id="loginForm" class="auth-form">
+                        <div class="form-group">
+                            <label for="loginEmail">البريد الإلكتروني:</label>
+                            <input type="email" id="loginEmail" name="email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="loginPassword">كلمة المرور:</label>
+                            <input type="password" id="loginPassword" name="password" required>
+                            <span class="error-message" id="passwordError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="rememberMe" name="remember">
+                                تذكرني
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="auth-btn">تسجيل الدخول</button>
+                        
+                        <div class="form-links">
+                            <a href="#">نسيت كلمة المرور؟</a>
+                            <a href="register.html">ليس لديك حساب؟ سجل الآن</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <aside class="sidebar">
+            <div class="container">
+                <h3>مميزات العضوية</h3>
+                <ul>
+                    <li>حفظ قائمة الأنمي المفضل</li>
+                    <li>تقييم ومراجعة الأنمي</li>
+                    <li>المشاركة في المنتديات</li>
+                    <li>الحصول على توصيات شخصية</li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 عالم الأنمي. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <span id="toastMessage"></span>
+        <button id="toastClose">&times;</button>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
+
